@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH Máquina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./Recursos/icono.ico">
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><input type="file" id="archivo1"></li>
+                <!--<li class="menu-nav__item"><a href="">Archivo</a></li>-->
+                <li class="menu-nav__item"><button id="iniciar-ejecucion">iniciar ejecucion</button></li>
+
+                <li class="menu-nav__item"><button id="ocultar-memoria">muestre memoria</button></li>
+            
+                <li class="menu-nav__item"><button id="mostrar-programas">muestre programas</button></li>
+
+                <li class="menu-nav__item"><button id="sbs">paso a paso</button></li>
+
+                <li class="menu-nav__item"><button id="SJF-Ne">SJF-No expropiativo</button></li>
+
+                <li class="menu-nav__item"><button id="FCFS">FCFS</button></li>
+
+            </ul>
+        </nav>
+        
+        <h1>CH Máquina</h1>
+        <div class="acumulador">   
+            <h2>Acumulador:</h2>
+            <p id="acumulador-text"> </p>
+    
+            <label for="cambiar-memoria">memoria: </label>
+            <input type="number" name="memoria" id="memoryInput" max="4100" min="90" placeholder="90">
+            
+            <label for="kernel">Kernel:</label>
+            <input type="number" name="kernel" id="kernelInput" max="4100" min="49" placeholder="49">
+            
+        </div>
+
+    </header>
+
+   
+
+    <section class="mapa">      <!--Contiene al mapa de memoria-->
+        <div class="mapa-div">
+            <h2 id="titulotabla">Memoria</h2>
+                <table border=2 id="memoria">    <!--Mapa de memoria-->
+                    <tr>
+                        <th>Position</th>
+                        <th>Contenido</th>
+                    </tr>
+        
+                </table>
+        </div>
+            <pre id='contenido-archivo'></pre>
+    </section>
+
+    <section class="contenedor-salidas"><!--Contiene al "computador" e "impresora" donde se muestran las salidas-->
+        <div class="contendero-salidas-div">
+            <p id="titulo-impresora">impresora</p>
+            <textarea name="" id="impresora" cols="25" rows="10" title="impresora"></textarea>
+        </div>
+
+        <div class="contendero-salidas-div">
+            <p id="titulo-computador">computador</p>
+            <textarea name="" id="computador" cols="25" rows="10" title="computador"></textarea>
+        </div>
+
+    </section>
+
+    <section id="contenedor-tablas">   <!--Mapa de variables y etiquetas-->
+        <div class="tabla">
+        <h2 class="titulos-tablas">Tabla Etiquetas</h2>
+        <table id="tabla-etiquetas" border="2">
+            <tr>
+                <th>Posición</th>
+                <th>etiquetas</th>
+            </tr>
+        </table>
+        </div>
+        <div class="tabla">
+        <h2 class="titulos-tablas">Tabla Variables</h2>
+        <table id="tabla-variables" border="5">
+            <tr>
+                <th>Posición</th>
+                <th>variables</th>
+            </tr>
+        </table>
+        </div>
+
+        <div class="tabla">
+            <h2 class="titulos-tablas">Tabla Programas</h2>
+            <table id="tabla-programas" border="2">
+                <tr>
+                    <th>Posición</th>
+                    <th>programas</th>
+                </tr>
+            </table>
+            </div>
+    </section>
+
+
+
+    
+    <script src="index.js"></script>
+</body>
+
+</html>

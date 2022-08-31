@@ -1,0 +1,147 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    background-color: #515151;
+}
+
+h1{    
+    text-align: center;
+    color: #ffffff;
+}
+th{
+    color:#d7d3d3;
+}
+td{
+    color: #8d8686;
+}
+header{
+    background-color:#353232
+}
+.acumulador{  
+    text-align: center;
+    margin: 3px;
+    color: #dfd5d5;
+}
+#acumulador-text{
+    text-align: center;
+    color: #d7d3d3;
+}
+#memoryInput{
+    margin: 7px;
+}
+#kernelInput{
+    margin: 7px;
+}
+#memoria{
+    border: 3px solid black;
+    padding: 5px;
+    margin: 10px;
+    
+}
+.mapa{
+    border: 2px solid #1d1c1c;
+}
+.mapa-div{
+    margin: 10px;
+    max-height: 25em;
+    overflow-y: scroll;
+}
+.menu{
+    background-color: #1c1919;
+    padding: 10px 0;
+}
+.menu-nav{ 
+    border: 5px;
+    list-style: none;
+    padding-left: 7px; 
+    margin: 5px;
+ 
+}
+.menu-nav__item{
+    background-color: #1c1919;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 10px;
+
+}
+.menu-nav__item a{
+    background-color: #1c1919;
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu-nav__item input:hover{
+    cursor: pointer;
+}
+.menu-nav__item input:active{
+    background-color: #c5efb8;
+}
+
+.mapa{
+    /*position: relative;*/
+    width: 20%;
+    margin-right: 10%;
+}
+
+#impresora, #computador{
+    font-size: 18px;
+    border: solid #1b1818;
+    border-radius: 7px;
+    background-color: #918989;
+    width: 100%;
+    height: 180px;
+    resize: none;
+}
+#titulo-impresora, #titulo-computador{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 24px;
+    padding: 5px;
+    text-align: center;
+    color:#d7d3d3;
+    background-color: #353232;
+    
+}
+.contenedor-salidas{
+    width: 33%;
+    padding: 5px;
+    margin: 10px 20px 5px 30px;
+}
+.contendero-salidas-div{
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contenedor-tablas{
+    width: 30%;
+    max-height: 25em;
+    overflow-y: scroll;
+    width: 300px;
+    margin: 20px 15px 10px 100px;
+}
+#tabla-etiquetas, #tabla-variables, #tabla-programas{
+    border: 2px solid black;
+    padding: 5px;
+  
+}
+.titulos-tablas{
+    width: 100%;
+    color: #ffffff;
+}
+.tabla{
+    padding: 5px;
+}
+
+#tabla-programas{
+    overflow-x: scroll;
+    max-width: 10em;
+}
+section{
+    display: inline-block;
+}
+
